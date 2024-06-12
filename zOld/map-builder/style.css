@@ -1,0 +1,187 @@
+/* Editor */
+
+#editor {
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#blocks .block>div>div {
+  display: flex;
+  flex-direction: column;
+}
+
+#blocks {
+  width: 100%;
+  max-width: 920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.block {
+  border: 1px black solid;
+  width: 100%;
+  max-width: 920px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Map */
+
+#map {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+/* Drag Stuff */
+
+.draggable {
+  /* width: 90px; */
+  /* height: 90px; */
+  /* padding: 0.5em; */
+  float: left;
+  /* margin: 3px; */
+  /* border: solid 1px black; */
+}
+
+.draggable>.title {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: xx-large;
+
+  /* white-space: nowrap; */
+  white-space: normal;
+  font-family: 'Vujahday Script', cursive;
+
+  /* border: black 1px solid; */
+  color: rgb(53, 18, 18);
+
+  /* background-color: rgba(0, 0, 0, 0.049); */
+  /* border-radius: 50%; */
+  width: 100%;
+  text-align: center;
+  text-shadow: 0px 0px 1px rgb(53, 18, 18);
+}
+
+#draggable {
+  cursor: n-resize;
+}
+
+#drag-box {
+  width: 883px;
+  height: 595px;
+  /* border: 2px solid #ccc; */
+  background-image: url('./images/maps/map.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Popups and Overlay */
+
+/* button {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 3px;
+} */
+
+#close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: rgb(240, 240, 240);
+}
+
+#overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+#popup {
+  width: 80%;
+  height: 50%;
+  max-width: 800px;
+  min-height: 600px;
+  /* padding: 20px; */
+  position: relative;
+  background: black;
+  margin: 10vh auto;
+  color: whitesmoke;
+}
+
+/* Assets */
+#assets {
+  display: none;
+}
+
+/* Settings */
+#settings {
+  display: none;
+}
+
+/* Map Nodes */
+
+.node {
+  height: 100%;
+  /* display: none; */
+}
+
+#node-title {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#node-title-text {
+  /* color: whitesmoke; */
+  font-size: xxx-large;
+  text-shadow: 0px 0px 10px whitesmoke;
+}
+
+#node-header {
+  height: 60%;
+  background-size: cover;
+  background-position: 0% 50%;
+}
+
+#node-header-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  text-align: justify;
+}
+
+#node-lore {
+  margin: 2%;
+  /* color: whitesmoke; */
+  font-size: x-large;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  text-shadow: 1px 1px 1px black;
+}
+
+textarea {
+  /* resize: x; */
+  max-width: 200px;
+  max-height: 100px;
+}
